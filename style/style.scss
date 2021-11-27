@@ -1,0 +1,167 @@
+*{
+    
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heder{
+    margin: auto;
+    
+    max-width: 1140px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    .heder_left{
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            width:42px;
+            height: 64px;
+            
+        }
+    }
+    .list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .heder_left{
+        .location_img{
+            width: 55px;
+            height: 55px;
+        }
+        
+    }
+}
+.about{
+    margin: auto;
+    max-width: 1342px;
+    height: 580px;
+    background-image: url(../img/photo_2021-11-06_15-11-04.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    .about_container{
+        max-width: 1140px;
+        height: 580px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        color: #c10202;
+        text-shadow: 1px 1px #5c5a5a;
+        font-size: 25px;
+        line-height: 29px;
+        .about_container_left{
+            max-width: 550px;
+            align-self: flex-start;
+        }
+        .about_container_right{
+            align-self: end;
+            text-align: center;
+            width: 450px;
+        }
+    }
+}
+.services{
+    margin: auto;
+    max-width: 1140px;
+    text-align: center;
+    background-image: url(../img/logo.jpg) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+    font-size: 25px;
+    .services_bloc{
+        display: flex;
+        text-align: start;
+        justify-content: space-around;
+        
+        .services_left{
+            font-size: 18px;
+            line-height: 35px;
+            img{
+                max-width: 400px;
+            }
+        }
+        .services_right{
+            font-size: 18px;
+            line-height: 35px;
+            img{
+                max-width: 400px;
+            }
+        }
+        .list{
+            // list-style: url();
+            list-style:url(../img/logomini2.png);
+            
+            
+        }
+    }
+    
+    
+}
+.trust{
+    margin: auto;
+    max-width: 1140px;
+    font-size: 25px;
+    text-align: center;
+    .trust_logo{
+        display: flex;
+        justify-content: space-around;
+        .trust_img{
+            max-width: 330px;
+        }
+    }
+}
+.contacts{
+    margin: auto;
+    max-width: 1140px;
+    font-size: 25px;
+    text-align: center;
+    .iago{
+        display: flex;
+        justify-content: space-between;
+        .adres{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: flex-start;
+            line-height: 30px;
+            .adres_flex{
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                .adres_icon{
+                    width: 55px;
+                    height: 55px;
+                }
+            }
+            
+        }
+    }
+    .iago_schedule{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        .schedule_img{
+            max-width: 555px;
+        }
+        .schedule{
+            .schedule_list{
+                text-align: start;
+                list-style-image:url(../img/logomini2.png);
+            }
+            
+        }
+    }
+}
+.footer{
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
