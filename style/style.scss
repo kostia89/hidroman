@@ -1,12 +1,11 @@
 *{
-    
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
 .heder{
     margin: auto;
-    
     max-width: 1140px;
     display: flex;
     align-content: center;
@@ -20,7 +19,11 @@
         .logo{
             width:42px;
             height: 64px;
-            
+        }
+        .nav{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
         }
     }
     .list{
@@ -29,39 +32,47 @@
         align-items: center;
         gap: 15px;
     }
-    .heder_left{
+    .heder_right{
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
         .location_img{
             width: 55px;
             height: 55px;
         }
-        
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
     }
 }
 .about{
     margin: auto;
     max-width: 1342px;
     height: 580px;
-    background-image: url(../img/photo_2021-11-06_15-11-04.jpg);
+    background-image: url(../img/6.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
+    background-position: center;
     .about_container{
         max-width: 1140px;
         height: 580px;
         margin: auto;
         display: flex;
         justify-content: space-between;
-        color: #c10202;
-        text-shadow: 1px 1px #5c5a5a;
+        color: #b81117;
+        text-shadow: 1px 1px #0c0c0c;
         font-size: 25px;
         line-height: 29px;
+        font-weight: 500;           
         .about_container_left{
-            max-width: 550px;
+            width: 50%;
             align-self: flex-start;
         }
         .about_container_right{
             align-self: end;
             text-align: center;
-            width: 450px;
+            width: 50%
         }
     }
 }
@@ -73,16 +84,16 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    
     font-size: 25px;
     .services_bloc{
         display: flex;
         text-align: start;
         justify-content: space-around;
-        
         .services_left{
             font-size: 18px;
             line-height: 35px;
+            font-weight: 500;
+            width: 50%;
             img{
                 max-width: 400px;
             }
@@ -90,19 +101,16 @@
         .services_right{
             font-size: 18px;
             line-height: 35px;
+            font-weight: 500;
+            width: 50%;
             img{
                 max-width: 400px;
             }
         }
         .list{
-            // list-style: url();
             list-style:url(../img/logomini2.png);
-            
-            
         }
     }
-    
-    
 }
 .trust{
     margin: auto;
@@ -111,6 +119,7 @@
     text-align: center;
     .trust_logo{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         .trust_img{
             max-width: 330px;
@@ -140,7 +149,9 @@
                     height: 55px;
                 }
             }
-            
+        }
+        .map{
+            width: 50%;
         }
     }
     .iago_schedule{
@@ -156,7 +167,6 @@
                 text-align: start;
                 list-style-image:url(../img/logomini2.png);
             }
-            
         }
     }
 }
@@ -164,4 +174,100 @@
     margin: auto;
     text-align: center;
     margin-top: 50px;
+}
+@media(max-width: 1200px){
+    .heder_left{
+        h1{
+            display: none;
+        }
+    }    
+}
+@media (max-width: 960px){
+    .heder{
+        .list{
+            padding: 0;
+            gap: 5px;
+        }
+    }
+    .services{
+        .services_bloc{
+            .services_left img{
+                max-width: 315px;
+            }
+            .services_right img{
+                max-width: 315px;
+            }
+        }
+    }
+    .iago_schedule{
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px){
+    .heder{
+        .list{
+            img{
+                display: none;
+            }
+        }
+    }
+    .iago{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media  (max-width:660px){
+    .heder_right{
+        .heder_adres{
+            display: none;
+        }
+            
+    }
+    .about{
+        .about_container{
+            display: block;
+            .about_container_left{
+                width: 100%;
+            }
+            .about_container_right{
+                width: 100%;
+            }
+        }
+    }
+    .services{
+        .services_bloc{
+            flex-direction: column;
+            align-items: center;
+            .services_left{
+                width: 100%;
+                
+            }
+            .services_right{
+                width: 100%;
+                
+            }
+        }
+    }
+    .contacts{
+        .iago_schedule{
+            .schedule_img{
+                max-width: 320px;
+            }
+        }
+    }
+}
+@media  (max-width:576px){
+    .heder{
+        .heder_left{
+            .logo{
+                width: 21px;;
+            height: 32px;
+            }
+            .nav{
+                .list{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
