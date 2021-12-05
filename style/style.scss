@@ -68,11 +68,13 @@
         .about_container_left{
             width: 50%;
             align-self: flex-start;
+            backdrop-filter: blur(2px);
         }
         .about_container_right{
             align-self: end;
             text-align: center;
-            width: 50%
+            width: 50%;
+            backdrop-filter: blur(2px);
         }
     }
 }

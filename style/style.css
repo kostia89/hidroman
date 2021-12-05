@@ -110,6 +110,8 @@
   width: 50%;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 
 .about .about_container .about_container_right {
@@ -118,6 +120,8 @@
       align-self: end;
   text-align: center;
   width: 50%;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 
 .services {
