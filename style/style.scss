@@ -16,6 +16,10 @@
         align-content: center;
         justify-content: space-between;
         align-items: center;
+        .title{
+            display: flex;
+            color: black;
+        }
         .logo{
             width:42px;
             height: 64px;

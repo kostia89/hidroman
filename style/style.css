@@ -35,6 +35,13 @@
           align-items: center;
 }
 
+.heder .heder_left .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+}
+
 .heder .heder_left .logo {
   width: 42px;
   height: 64px;
