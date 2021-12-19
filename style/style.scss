@@ -53,14 +53,8 @@
 .about{
     margin: auto;
     max-width: 1342px;
-    height: 580px;
-    background-image: url(../img/6.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
     .about_container{
         max-width: 1140px;
-        height: 580px;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -72,17 +66,16 @@
         .about_container_left{
             width: 50%;
             align-self: flex-start;
-            backdrop-filter: blur(2px);
-            border: solid 0;
-            border-radius: 30px;    
+            .left_img{
+                max-width: 400px;
+            }    
         }
         .about_container_right{
-            align-self: end;
             text-align: center;
             width: 50%;
-            backdrop-filter: blur(2px);
-            border: solid 0;
-            border-radius: 30px; 
+            .ridht_img{
+                max-width: 400px;
+            }
         }
     }
 }
@@ -90,7 +83,7 @@
     margin: auto;
     max-width: 1140px;
     text-align: center;
-    background-image: url(../img/logo.jpg) ;
+    background-image: url(../img/logo3.png) ;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -124,7 +117,7 @@
             }
         }
         .list{
-            list-style:url(../img/logomini2.png);
+            list-style:url(../img/logomini3.png);
         }
     }
 }
@@ -205,6 +198,21 @@
             gap: 5px;
         }
     }
+    .about{
+        .about_container{
+            .about_container_left{
+                .left_img{
+                    max-width: 300px;
+                } 
+                
+            }
+            .about_container_right{
+                .ridht_img{
+                    max-width: 300px;
+                }
+            }
+        }
+    }
     .services{
         .services_bloc{
             .services_left img{
@@ -212,6 +220,13 @@
             }
             .services_right img{
                 max-width: 315px;
+            }
+        }
+    }
+    .trust{
+        .trust_logo{
+            .trust_img{
+                max-width: 250px;
             }
         }
     }
@@ -247,6 +262,9 @@
             }
             .about_container_right{
                 width: 100%;
+                .ridht_img{
+                    display: none;
+                }
             }
         }
     }
