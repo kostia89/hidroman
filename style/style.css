@@ -89,16 +89,10 @@
 .about {
   margin: auto;
   max-width: 1342px;
-  height: 580px;
-  background-image: url(../img/6.jpg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
 }
 
 .about .about_container {
   max-width: 1140px;
-  height: 580px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,29 +111,26 @@
   width: 50%;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  border: solid 0;
-  border-radius: 30px;
+}
+
+.about .about_container .about_container_left .left_img {
+  max-width: 400px;
 }
 
 .about .about_container .about_container_right {
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
   text-align: center;
   width: 50%;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  border: solid 0;
-  border-radius: 30px;
+}
+
+.about .about_container .about_container_right .ridht_img {
+  max-width: 400px;
 }
 
 .services {
   margin: auto;
   max-width: 1140px;
   text-align: center;
-  background-image: url(../img/logo.jpg);
+  background-image: url(../img/logo3.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -198,7 +189,7 @@
 }
 
 .services .services_bloc .list {
-  list-style: url(../img/logomini2.png);
+  list-style: url(../img/logomini3.png);
 }
 
 .trust {
@@ -313,11 +304,20 @@
     padding: 0;
     gap: 5px;
   }
+  .about .about_container .about_container_left .left_img {
+    max-width: 300px;
+  }
+  .about .about_container .about_container_right .ridht_img {
+    max-width: 300px;
+  }
   .services .services_bloc .services_left img {
     max-width: 315px;
   }
   .services .services_bloc .services_right img {
     max-width: 315px;
+  }
+  .trust .trust_logo .trust_img {
+    max-width: 250px;
   }
   .iago_schedule {
     -webkit-box-orient: vertical;
@@ -354,6 +354,9 @@
   }
   .about .about_container .about_container_right {
     width: 100%;
+  }
+  .about .about_container .about_container_right .ridht_img {
+    display: none;
   }
   .services .services_bloc {
     -webkit-box-orient: vertical;
