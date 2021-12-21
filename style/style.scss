@@ -269,16 +269,18 @@
         }
     }
     .services{
+        background-image: none;
         .services_bloc{
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: center;
+            
             .services_left{
                 width: 100%;
-                
+                align-items: center;
             }
             .services_right{
                 width: 100%;
-                
+                align-items: center;
             }
         }
     }
