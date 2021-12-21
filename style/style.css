@@ -209,6 +209,10 @@
       justify-content: space-around;
 }
 
+.trust .trust_logo .slick-prev {
+  left: 0;
+}
+
 .trust .trust_logo .slick-next {
   right: 0;
 }
