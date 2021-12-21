@@ -209,6 +209,10 @@
       justify-content: space-around;
 }
 
+.trust .trust_logo .slick-next {
+  right: 0;
+}
+
 .trust .trust_logo .trust_img {
   max-width: 330px;
 }

@@ -130,6 +130,12 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        ..slick-prev{
+            left: 0;
+        }
+        .slick-next{
+            right: 0;
+        }
         .trust_img{
             max-width: 330px;
         }
